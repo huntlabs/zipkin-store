@@ -1,0 +1,13 @@
+{
+    "name": "zpikin-store",
+    "description": "A tcp-server framework.",
+    "copyright": "Copyright (c) 2017-2018, huntframework.com",
+    "homepage": "http://www.huntframework.com/",
+    "license": "Apache-2.0",
+    "targetType": "executable",
+    "dependencies": {
+        "zipkin":{"path": "../zipkin_new"},
+        "hunt-imf":{"path": "../hunt-imf"}
+    }
+
+}
