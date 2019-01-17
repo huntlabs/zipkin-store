@@ -1,9 +1,8 @@
 module source.SpanController;
 
 import hunt.imf;
+import hunt.trace;
 import zipkin.proto3.zipkin;
-import zipkin.imf.client;
-import zipkin;
 
 __gshared string HOST = "http://10.1.11.34:9411/api/v2/spans";
 
@@ -14,7 +13,7 @@ class SpanController
     @route(0)
     void receiveSpan(ListOfSpans list)
     {
-        zipkin.span.Span[] cspans;
+        hunt.trace.span.Span[] cspans;
         foreach(s ; list.spans)
         {
             cspans ~= toCSpan(s);
