@@ -1,4 +1,4 @@
-module source.bootstrap;
+module Bootstrap;
 
 import hunt.imf;
 import core.thread;
